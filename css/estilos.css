@@ -1,2 +1,121 @@
-body{background-color: antiquewhite;
-margin:0px;}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuente y cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f4f7f8;
+    color: #333;
+    padding: 0 20px;
+}
+
+/* Header y navegación */
+header {
+    background: #4a90e2;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffe600;
+}
+
+/* Títulos principales */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #4a90e2;
+}
+
+/* Main y secciones */
+main {
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+}
+
+section {
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* Párrafos */
+p {
+    margin-bottom: 15px;
+}
+
+/* Listas y enlaces */
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+ul li a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: #e94e77;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #4a90e2;
+    color: #fff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    header nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
